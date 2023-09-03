@@ -102,6 +102,20 @@ namespace Lesson1
             // b.b присвоить значение а, с присвоить значение b, а присвоить значение с.
             Console.WriteLine();
             Console.WriteLine("Задание 6");
+            Console.WriteLine("Введите число a:");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число b:");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число c:");
+            c = Convert.ToInt32(Console.ReadLine());
+            (a, b, c) = (b, c, a);
+            Console.Write("a) ");
+            Console.WriteLine(a + " " + b + " " + c);
+            (a, b, c) = (c, a, b);
+            (a, b, c) = (c, a, b);
+            Console.Write("b) ");
+            Console.WriteLine(a + " " + b + " " + c);
+
 
             // Задание 7
             // Вывод случайных чисел 
@@ -128,6 +142,22 @@ namespace Lesson1
             // Найти стоимость всей покупки, если купили x кг конфет, у кг печенья и z кг яблок.
             Console.WriteLine();
             Console.WriteLine("Задание 9");
+            double x, y, z, sum, cost1, cost2, cost3;
+            Console.WriteLine("Сколько кг конфет было куплено?");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Сколько кг печенья было куплено?");
+            y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Сколько кг яблок было куплено?");
+            z = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Сколько стоит 1кг конфет?");
+            cost1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Сколько стоит 1кг печенья?");
+            cost2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Сколько стоит 1кг яблок?");
+            cost3 = Convert.ToDouble(Console.ReadLine());
+            sum = (x * cost1) + (y * cost2) + (z * cost3);
+            Console.WriteLine();
+            Console.WriteLine("Cтоимость всей покупки - " + sum + "руб");
             Console.ReadKey();
         }
     }
