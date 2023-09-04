@@ -142,7 +142,9 @@ namespace Lesson1
             int rest = n / 10;
             string first = Convert.ToString(last);
             string second = Convert.ToString(rest);
-            Console.WriteLine(first + second);
+            rest = Convert.ToInt32(first + second);
+            Console.WriteLine(rest); // выводит число как число
+            Console.WriteLine(first + second); // выводит число как строку
 
             // Задание 9
             // Известна стоимость 1 кг конфет, 1 кг печенья и 1 кг яблок.
