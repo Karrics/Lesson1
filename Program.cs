@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -136,6 +136,13 @@ namespace Lesson1
             // в начале. Найти полученное число.
             Console.WriteLine();
             Console.WriteLine("Задание 8");
+            Console.WriteLine("Введите трёхзначное натуральное число");
+            int n = Int32.Parse(Console.ReadLine()); // вводим трёхзначное натуральное число 
+            int last = n % 10;
+            int rest = n / 10;
+            string first = Convert.ToString(last);
+            string second = Convert.ToString(rest);
+            Console.WriteLine(first + second);
 
             // Задание 9
             // Известна стоимость 1 кг конфет, 1 кг печенья и 1 кг яблок.
