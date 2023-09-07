@@ -17,6 +17,7 @@ namespace Lesson1
             string word_3 = "Май";
 
             Console.WriteLine("Задание 1");
+            Console.WriteLine("Вывести слова на экран");
             Console.WriteLine("a) " + word_1 + " " + word_2 + " " + word_3);
 
             Console.Write("b) ");
@@ -28,6 +29,7 @@ namespace Lesson1
             // Поменять числа местами (а может и не только числа)
             Console.WriteLine();
             Console.WriteLine("Задание 2");
+            Console.WriteLine("Поменять числа местами");
             Console.WriteLine("Введите первое число");
             string num1 = Console.ReadLine();
             Console.WriteLine("Введите Второе число");
@@ -40,6 +42,7 @@ namespace Lesson1
             // Найти длину окружности и площадь круга 
             Console.WriteLine();
             Console.WriteLine("Задание 3");
+            Console.WriteLine("Найти длину окружности и площадь круга");
             Console.WriteLine("Введите радиус окружности");
             double Rad = double.Parse(Console.ReadLine());
             Console.WriteLine("Длина окружности = {0}", Math.PI * Rad * 2);
@@ -49,6 +52,7 @@ namespace Lesson1
             // Найти косинус заданного угла 
             Console.WriteLine();
             Console.WriteLine("Задание 4");
+            Console.WriteLine("Найти косинус заданного угла");
             Console.WriteLine("Укажите угол в градусах");
             double angle = double.Parse(Console.ReadLine());
             double radians = (angle * (Math.PI)) / 180;
@@ -61,6 +65,7 @@ namespace Lesson1
             //D=b^2-4ac
             Console.WriteLine();
             Console.WriteLine("Задание 5");
+            Console.WriteLine("найти корни квадратного уравнения");
             Console.WriteLine("Введите коэфиценты квадратного уравнения (a, b, c)");
             double a, b, c, d, x1, x2;
             try
@@ -102,6 +107,7 @@ namespace Lesson1
             // b.b присвоить значение а, с присвоить значение b, а присвоить значение с.
             Console.WriteLine();
             Console.WriteLine("Задание 6");
+            Console.WriteLine("Поменять три числа местами");
             Console.WriteLine("Введите число a:");
             a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите число b:");
@@ -121,6 +127,7 @@ namespace Lesson1
             // Вывод случайных чисел 
             Console.WriteLine();
             Console.WriteLine("Задание 7");
+            Console.WriteLine("Вывод случайных чисел");
             Random rnd = new Random(); //Создание объекта для генерации чисел
             int value1 = rnd.Next(); //Получить очередное (в данном случае - первое) случайное число
             int value2 = rnd.Next();
@@ -136,6 +143,7 @@ namespace Lesson1
             // в начале. Найти полученное число.
             Console.WriteLine();
             Console.WriteLine("Задание 8");
+            Console.WriteLine("Поставить последнюю цифру числа в начале");
             Console.WriteLine("Введите трёхзначное натуральное число");
             int n = Int32.Parse(Console.ReadLine()); // вводим трёхзначное натуральное число 
             int last = n % 10;
@@ -151,6 +159,7 @@ namespace Lesson1
             // Найти стоимость всей покупки, если купили x кг конфет, у кг печенья и z кг яблок.
             Console.WriteLine();
             Console.WriteLine("Задание 9");
+            Console.WriteLine("Найти общую сумму покупки");
             double x, y, z, sum, cost1, cost2, cost3;
             Console.WriteLine("Сколько кг конфет было куплено?");
             x = Convert.ToDouble(Console.ReadLine());
